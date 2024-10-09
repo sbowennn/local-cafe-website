@@ -22,7 +22,7 @@ font-family: "Indie Flower", cursive;
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 *{
-  background-color: hsla(25, 34%, 33%, 0.8);
+  background-color: rgb(205, 159, 129);
   color: white;
   font-family: "Fredoka", sans-serif;
   padding: 0;
@@ -65,20 +65,37 @@ table{
   width: 750px;  
 }
 #t-title{
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 500;
 }
-
+.new{
+  font-weight: 500;
+}
+#t-description{
+  font-weight: 200;
+  margin: 5%;
+  text-align: justify;
+}
 img{
-  width: 450px;
-  border-radius: 15px;
+  width: 325px;  
+  border-radius: 20px;
 }
 .news{
   display: inline-block;
   margin-top: 5%;
   margin-right: 50px;
-  width: 100%;  
+  width: 100%;
   text-align: center;
+}
+.button{
+  padding: 10px;
+  border-radius: 4px; 
+  background-color: hsla(20, 30%, 33%);
+  color: white;
+  font-weight: 500;
+}
+.button:hover{
+  background-color:  hsla(24, 45%, 55%)
 }}
 
 @media screen and (max-width: 938px) {
