@@ -26,7 +26,8 @@ h1{
   font-weight: 500;
 }
 h2{
-  padding: 2%;
+  padding-top: 3%;
+  margin-top: 3%;
 
 }
 body{
@@ -34,10 +35,12 @@ body{
   background-size: cover;
   background-position: center;
 }
+section{
+  
+}
 
 @media screen and (min-width: 939px) {
 *{
-  
   color: rgb(74, 43, 22);
   font-family: "Fredoka", sans-serif;
   padding: 0;
@@ -64,11 +67,9 @@ header{
   font-weight: 600;
 }
 .menu{
-  margin-top: 5%;
-  margin-bottom: 20px;
+  margin: 5% 2px 20px 10px;
   display: flex;
   justify-content: space-evenly;
-  margin-right: 20px;
   display: inline-block;
   font-size: 18px;
   font-weight: 400;
@@ -104,11 +105,11 @@ table{
   background-color: bisque;
 }
 #t-title{
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 500;
 }
 .new{
-  font-weight: 500;
+  font-weight: 600;
 }
 #t-description{
   font-weight: 400;
@@ -140,9 +141,8 @@ table{
 /*--ABOUT.HTML--*/
 #about{
   background-color: bisque;
-  margin: 1% 25%;
-  font-size: 20px;
-
+  margin: 1.5% 20%;
+  font-size: 25px;
 }
 /*--CONTACT.HTML--*/
 input[type="text"],
@@ -173,8 +173,7 @@ input[type="submit"]{
 @media screen and (max-width: 938px) {
 *{
   box-sizing: border-box;
-  background-color: rgb(205, 159, 129);
-  color: white;
+  color: rgb(74, 43, 22);
   font-family: "Fredoka", sans-serif;
   padding: 0;
   margin: 2px;
@@ -203,60 +202,16 @@ header{
 .menu{
   justify-content: space-evenly;
   border: 20px;
-  margin-bottom: 100px;
+  
   display: inline;
   font-size: 16px;
-  font-weight: 300;
-}
-table{
-  margin-left: auto;
-  margin-right: auto;
-  color: 1px transparent hsla(24, 45%, 55%, 0.8);
-  width: 550px;
-  border-spacing: 30px 0px;
-}
-#t-title{
-  margin: 20px;
-  padding: 5px;
-  border: 5px;
-  font-size: 20px;
-  font-weight: 500;
-}
-#t-description{
-  font-size: 16px;
-  font-weight: 200;
-  margin: 10%;
-  text-align: justify;
-}
-img{
-  width: 200px;  
-  border-radius: 20px;
-}
-.news{
-  display: inline-block;
-  margin-top: 5%;
-  margin-right: 50px;
-  margin-bottom: 2%;
-  width: 100%;
-  text-align: center;
-}
-.button{
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 4px; 
-  background-color: hsla(20, 30%, 33%);
-  color: white;
-  font-weight: 500;
-}
-.button:hover{
-  background-color: hsla(24, 45%, 86%);
-  color: hsla(20, 30%, 33%);
+  font-weight: 400;
+  
 }
 footer{
   display: block;
   grid-template-columns: fit-content(60%);
-  justify-content: space-evenly;
-  
+  justify-content: space-evenly;  
 }
 footer a{
   font-size: 20px;
@@ -267,4 +222,91 @@ footer a{
 .footer{
   font-size: 16px;
   font-weight: 600;
-}}
+}
+/*--INDEX.HTML--*/
+table{
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  color: 1px transparent hsla(24, 45%, 55%, 0.8);
+  background-color: bisque;
+  width: 550px;
+  border-spacing: 30px 0px;
+}
+#t-title{
+  margin: 20px;
+  padding: 5px;
+  border: 5px;
+  font-size: 35px;
+  font-weight: 600;
+}
+#t-description{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10%;
+  text-align: justify;
+}
+img{
+  width: 200px;  
+  border-radius: 20px;
+  padding: 3%;
+}
+.news{
+  display: inline-block;
+  margin-top: 5%;
+  margin-right: 50px;
+  margin-bottom: 2%;
+  width: 100%;
+  text-align: center;
+}
+.new{
+  font-weight: 600;
+}
+.button{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: hsla(20, 30%, 33%);
+  color: white;
+  font-weight: 500;
+}
+.button:hover{
+  background-color: hsla(24, 45%, 86%);
+  color: hsla(20, 30%, 33%);
+}
+.hide{
+  visibility: hidden;
+}
+/*--ABOUT.HTML--*/
+.about{
+  font-size: 35px;
+}
+#about{
+  background-color: bisque;
+  margin: 1% 25%;
+  font-size: 20px;
+}
+/*--CONTACT.HTML--*/
+input[type="text"],
+input[type="email"],
+textarea[type="message"],
+input[type="submit"]{
+  box-sizing: border-box;
+  border: 3px solid rgb(74, 43, 22);
+  border-radius: 15px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  color: black;
+  background-color: bisque;
+  opacity: 0.8;
+}
+::placeholder{
+  color:black;
+}
+/*--CATEGORIES.HTML--*/
+.category{
+  background-color: bisque;
+}
+/*--PRODUCTS.HTML--*/
+
+}
