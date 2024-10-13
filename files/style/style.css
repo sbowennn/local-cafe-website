@@ -25,11 +25,20 @@ h1{
   font-size: 40px;
   font-weight: 500;
 }
+h2{
+  padding: 2%;
+
+}
+body{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)), url('/files/images/background.png');
+  background-size: cover;
+  background-position: center;
+}
 
 @media screen and (min-width: 939px) {
 *{
-  background-color: rgb(205, 159, 129);
-  color: white;
+  
+  color: rgb(74, 43, 22);
   font-family: "Fredoka", sans-serif;
   padding: 0;
   margin: 2px;
@@ -62,11 +71,12 @@ header{
   margin-right: 20px;
   display: inline-block;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
 }
 img{
   width: 325px;  
   border-radius: 20px;
+  padding: 0.5%;
 }
 footer{
   text-align: center;
@@ -89,7 +99,9 @@ table{
   margin-left: auto;
   margin-right: auto;
   color: 1px transparent hsla(24, 45%, 55%, 0.8);
-  width: 750px;  
+  width: 750px;
+  height: 650px;  
+  background-color: bisque;
 }
 #t-title{
   font-size: 60px;
@@ -99,9 +111,10 @@ table{
   font-weight: 500;
 }
 #t-description{
-  font-weight: 200;
+  font-weight: 400;
   margin: 5%;
   text-align: justify;
+  
 }
 .news{
   display: inline-block;
@@ -113,29 +126,46 @@ table{
 .button{
   padding: 10px;
   border-radius: 4px; 
-  background-color: hsla(20, 30%, 33%);
+  background-color: rgb(239, 166, 130);
   color: white;
   font-weight: 500;
 }
 .button:hover{
   background-color:  hsla(24, 45%, 55%)
 }
+.hide{
+  visibility: hidden;
+}
 
 /*--ABOUT.HTML--*/
+#about{
+  background-color: bisque;
+  margin: 1% 25%;
+  font-size: 20px;
 
+}
 /*--CONTACT.HTML--*/
 input[type="text"],
-input[type="text"],
-input[type="text"]{
-  width: 100%;
+input[type="email"],
+textarea[type="message"],
+input[type="submit"]{
   box-sizing: border-box;
-  border: 2px solid hsla(24, 45%, 55%, 0.8);
-  border-radius: 4px;
+  border: 3px solid rgb(74, 43, 22);
+  border-radius: 15px;
   padding: 12px 20px;
   margin: 8px 0;
-  color: white;
+  color: black;
+  background-color: bisque;
+  opacity: 0.8;
+}
+::placeholder{
+  color:black;
 }
 /*--CATEGORIES.HTML--*/
+.category{
+  background-color: bisque;
+  
+}
 
 /*--PRODUCTS.HTML--*/
 }
