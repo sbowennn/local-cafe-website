@@ -22,7 +22,7 @@ font-family: "Indie Flower", cursive;
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 h1{
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 500;
 }
 h2{
@@ -35,9 +35,7 @@ body{
   background-size: cover;
   background-position: center;
 }
-section{
-  
-}
+
 
 @media screen and (min-width: 939px) {
 *{
@@ -152,7 +150,7 @@ input[type="submit"]{
   box-sizing: border-box;
   border: 3px solid rgb(74, 43, 22);
   border-radius: 15px;
-  padding: 12px 20px;
+  padding: 16px 25px;
   margin: 8px 0;
   color: black;
   background-color: bisque;
@@ -161,10 +159,13 @@ input[type="submit"]{
 ::placeholder{
   color:black;
 }
+form{
+  font-size: 20px;
+
+}
 /*--CATEGORIES.HTML--*/
 .category{
   background-color: bisque;
-  
 }
 
 /*--PRODUCTS.HTML--*/
