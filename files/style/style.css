@@ -211,13 +211,13 @@ input[type="email"],
 textarea[type="message"],
 button[type="submit"]{
   box-sizing: border-box;
-  border: 3px solid bisque;
+  border: 3px solid rgb(243, 210, 170);
   border-radius: 15px;
   padding: 16px 25px;
   margin: 8px 0;
   color: black;
-  background-color: bisque;
-  opacity: 0.7;
+  background-color: rgb(243, 210, 170);
+  opacity: 0.8;
 }
 ::placeholder{
   color:black;
@@ -260,7 +260,242 @@ h2{
 }}
 
 @media screen and (max-width: 938px) {
-*{
+  
+  *{
+    color: rgb(74, 43, 22);
+    font-family: "Fredoka", sans-serif;
+    text-align: center;
+    align-items: center;
+  }
+  /*--COMMON AMONG HTMLs--*/
+  header{
+    padding-top: 0;
+    display: block;
+    margin: 20px;  
+  }
+  .container{
+    width: 100%;
+    float: left;
+  }
+  .logo{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    font-size: 50px;
+    float: left;
+    font-weight: 600;
+    width: 100%;
+  }
+  .menu{
+    justify-content: space-evenly;
+    border: 20px;
+    display: inline;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  img{
+    width: 325px; 
+    padding: 15px; 
+    border-radius: 20px;
+    padding: 0.5%;
+  }
+  .button{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6% 8%;
+    border-radius: 15px;
+    background-color: hsla(24, 45%, 55%, 0.8);
+    color: rgb(237, 232, 227);
+  }
+  .button:hover{
+    background-color: rgba(237, 232, 227, 0.8);
+    color: rgb(74, 43, 22);
+  }
+  footer{
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .footer{
+    font-weight: 600;
+  }
+  footer a{
+    font-size: 25px;
+    display: inline-block;
+    grid-template-columns: fit-content(40%);
+  }
+  
+  /*--INDEX.HTML--*/
+  .home-img{
+    padding-top: 10%;
+    width: 450px;
+    border-radius: 25px;
+  }
+  .text-header{
+    font-size: 30px;
+    font-weight: 550;
+    letter-spacing: 1px;  
+  }
+  .home-text{
+    letter-spacing: 1px;
+    padding: 8% 2% 2% 2%;
+    margin: 5px;
+    font-size: 22px;
+    font-weight: 350;
+    line-height: 60px;
+    background: linear-gradient(to bottom,#321b0b 0%, #a14a0f 100%);
+    background-clip: text;
+    color: transparent;
+  }
+  table{
+    padding: 1% 1% 4% 1%;
+    margin-left: auto;
+    margin-right: auto;
+    color: 1px transparent hsla(24, 45%, 55%, 0.8);
+    width: 700px;
+    height: 600px;  
+    background-color: hsla(33, 100%, 88%, 0.6);
+    border-radius: 20px;  
+  }
+  .new{
+    padding: 2%;
+    font-weight: 550;
+    font-size: 22px;
+  }
+  #t-description{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 3%;
+    text-align: justify;
+  }
+  .news{
+    display: inline-block;
+    margin-top: 5%;
+    margin-right: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  .opening{
+    padding: 6% 1% 2% 1%;
+    font-size: 32px;
+    font-weight: 550;
+  }
+  #opening{
+    width: 500px;
+    height: 250px;
+  }
+  .row1{
+    padding-top: 25px;
+    width: 180px;
+    border-bottom: solid 1px;
+  }
+  .row2{
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 80px;
+  }
+  
+  /*--ABOUT.HTML--*/
+  .about{
+    padding-top: 18%;
+  }
+  #about{
+    margin-left: auto;
+    margin-right: auto;    
+    align-items: center;
+    text-align: center;
+    background-color: hsla(33, 100%, 88%, 0.7);
+    width: 650px;
+    border-radius: 15px;
+    font-size: 22px;
+  }
+  .html{
+    color: #e34c26;
+  }
+  .css{
+    color: #264de4;
+  }
+  .js{
+    color: #f0db4f;
+  }
+  /*--CONTACT.HTML--*/
+  .contact{
+    padding-top: 10%;
+  }
+  #contact{
+    font-size: 20px;
+    padding: 1%;
+    font-weight: 450;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea[type="message"],
+  button[type="submit"]{
+    box-sizing: border-box;
+    border: 3px solid rgb(243, 210, 170);
+    border-radius: 15px;
+    padding: 16px 25px;
+    margin: 8px 0;
+    color: black;
+    background-color: rgb(243, 210, 170);
+    opacity: 0.8;
+  }
+  ::placeholder{
+    color:black;
+  }
+  form{
+    font-size: 20px;
+  }
+  /*--CATEGORIES.HTML--*/
+  .menu-title{
+    padding-top: 10%;
+    font-size: 50px;
+    font-weight: 550;
+    letter-spacing: 1px;
+  }
+  h2{
+    font-size: 40px;
+    font-weight: 500;
+    padding: 15px;
+  }
+  .cat-img{
+    width: 500px;  
+    border-radius: 50%;
+    padding: 3%;
+  }
+  /*--PRODUCTS.HTML--*/
+  
+  .p-description{
+    padding: 20px;
+    font-size: 26px;
+    font-weight: 450;
+  }
+  #product{
+    font-size: 44px;
+    font-weight: 550;
+    letter-spacing: 1px;
+  }
+  .product{
+    width: 300px;
+    border-radius: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  *{
   box-sizing: border-box;
   color: rgb(74, 43, 22);
   font-family: "Fredoka", sans-serif;
@@ -279,21 +514,19 @@ header{
   width: 100%;
   float: left;
 }
-.logo{
-  margin-top: 1%;
-  margin-left: 1%;
-  margin-bottom: 20px;
-  font-size: 50px;
-  float: left;
-  font-weight: 600;
-  width: 100%;
+
+.button{
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 2% 4%;
+  border-radius: 15px;
+  background-color: hsla(24, 45%, 55%, 0.8);
+  color: rgb(237, 232, 227);
 }
-.menu{
-  justify-content: space-evenly;
-  border: 20px;
-  display: inline;
-  font-size: 16px;
-  font-weight: 400;
+.button:hover{
+  background-color: rgba(237, 232, 227, 0.8);
+  color: rgb(74, 43, 22);
 }
 footer{
   display: block;
@@ -348,18 +581,6 @@ img{
 }
 .new{
   font-weight: 600;
-}
-.button{
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 4px;
-  background-color: hsla(20, 30%, 33%);
-  color: white;
-  font-weight: 500;
-}
-.button:hover{
-  background-color: hsla(24, 45%, 86%);
-  color: hsla(20, 30%, 33%);
 }
 /*--ABOUT.HTML--*/
 .about{
