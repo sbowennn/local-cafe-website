@@ -1,26 +1,20 @@
 
+// FORM EVENT ONCLICK AND RESET
 
+   function handleClick(event) {
+    event.preventDefault();
 
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementByClass('contact');
-  
-  form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent page reload
+    const forms = document.getElementById('form');
 
-      // Capture form data
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
+      if (form.checkValidity()){
+        alert("Your message has been sent successfully!");
+      
+      } else {
+        alert('Please fill in all the fields.');
+      }
 
-      // Create a data object to send
-      const formData = {
-          name: name,
-          email: email
-      };
+      forms.reset();
 
-      const resultDiv = document.getElementById('submit');
-      resultDiv.innerHTML = `<p>Thank you, <strong>${name}</strong>! We will contact you at <strong>${email}</strong>.</p>`;
+    };
 
-      // Optionally reset the form
-      form.reset();
-  });
-});
+// 

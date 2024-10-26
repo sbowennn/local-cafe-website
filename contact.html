@@ -14,7 +14,7 @@
 </head>
 <header class="header" id="header"> <!--https://enterprise.codecademy.com/projects/practice/musicon?-->
   <section class="container">
-    <h1 class="logo">Cozy Mug <i class="fa-solid fa-mug-hot icon"></i></h1>
+    <p class="logo">Cozy Mug <i class="fa-solid fa-mug-hot icon"></i></p>
   <section class="menu">
     <a href="index.html" class="menu">Home</a>
   </section>
@@ -33,11 +33,11 @@
 </section>  
 </header>
 <body>
-  <h1>Contact Us</h1>
-  <p>For more details - fill in the form!</p>
+  <h1 class="contact">Contact Us</h1>
+  <p id="contact" >For more details - fill in the form!</p>
   <br>
   <br>
-  <form action="/submit-form" class="contact" method="post">
+  <form id="form" onsubmit="submitForm(event)">
     <label for="name">Name:</label>
     <br>
     <input id="name" type="text" name="name" placeholder="Your Name" required>
@@ -51,9 +51,9 @@
     <br>
     <textarea id="input" type="message" name="message" cols="30" rows="10" placeholder="Write Your Message Here" required></textarea>
     <br>
-    <input id="submit" type="submit" value="Send Message">
+    <button onclick="handleClick(event)" type="submit">Send Message</button>
   </form>
-  <div id="submit"></div>
+  
 </body>
 <footer>
   <br>
