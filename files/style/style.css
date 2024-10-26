@@ -32,7 +32,7 @@ h2{
   margin-top: 3%;
 }
 body{
-  background-image: linear-gradient(rgb(255, 185, 131, 0.4), rgba(167, 79, 7, 0.4)), url('/files/images/background.png');
+  background-image: linear-gradient(rgba(255, 155, 79, 0.4), rgba(167, 79, 7, 0.4)), url('/files/images/background.png');
   background-size: cover;
   background-position: center;
 }
