@@ -21,7 +21,7 @@ font-family: "Indie Flower", cursive;
 */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
-@media screen and (min-width: 939px) {
+@media screen and (min-width: 990px) {
 
 /*--COMMON AMONG HTMLs--*/
   *{
@@ -34,12 +34,16 @@ font-family: "Indie Flower", cursive;
 }
 h1{
   font-size: 50px;
-  font-weight: 550;
+  font-weight: 600;
   letter-spacing: 2px;
   padding-top: 12%;
 }
 h2{
+  font-size: 42px;
+  font-weight: 550;
+  letter-spacing: 1px;
   padding-top: 3%;
+  padding-bottom: 1%;
   margin-top: 3%;
 }
 body{
@@ -125,7 +129,7 @@ footer a{
   padding: 8% 2% 2% 2%;
   margin: 5px;
   font-size: 42px;
-  font-weight: 350;
+  font-weight: 400;
   line-height: 100px;
   background: linear-gradient(to bottom,#321b0b 0%, #a14a0f 100%);
   background-clip: text;
@@ -181,12 +185,11 @@ table{
 .about{
   padding-top: 10%;
 }
-#about{
-  background-color: hsla(33, 100%, 88%, 0.7);
-  border-radius: 15px;
-  padding: 1%;
-  margin: 1.5% 20%;
-  font-size: 25px;
+.about-text{
+  background-color: hsla(33, 100%, 90%, 0.7);
+  font-size: 30px;
+  font-weight: 450;
+  border-radius: 20px;
 }
 .html{
   color: #e34c26;
@@ -227,17 +230,7 @@ form{
   font-size: 20px;
 }
 /*--CATEGORIES.HTML--*/
-.menu-title{
-  padding-top: 10%;
-  font-size: 50px;
-  font-weight: 550;
-  letter-spacing: 1px;
-}
-h2{
-  font-size: 40px;
-  font-weight: 500;
-  padding: 15px;
-}
+
 .cat-img{
   width: 500px;  
   border-radius: 50%;
@@ -261,7 +254,7 @@ h2{
 }}
 
 
-@media screen and (max-width: 938px) {
+@media screen and (max-width: 990px) {
   
 /*--COMMON AMONG HTMLs--*/  
   *{
@@ -274,7 +267,7 @@ h2{
     font-size: 45px;
     font-weight: 550;
     letter-spacing: 2px;
-    padding-top: 18%;
+    padding-top: 150px;
   }
   h2{
     padding-top: 3%;
@@ -284,7 +277,7 @@ h2{
     letter-spacing: 1px;
   }
   body{
-    background-image: linear-gradient(rgba(255, 222, 196, 0.4), rgba(167, 79, 7, 0.4)), url('/files/images/background.png');
+    background-image: linear-gradient(rgba(255, 222, 196, 0.3), rgba(167, 79, 7, 0.3)), url('/files/images/background.png');
     background-size: cover;
     background-position: center;
   }
