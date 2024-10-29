@@ -270,7 +270,7 @@ form{
     padding-top: 150px;
   }
   h2{
-    padding: 3% 0 3% 0;
+    padding: 4% 0 1% 0;
     margin-top: 3%;
     font-size: 30px;
     font-weight: 550;
@@ -317,7 +317,7 @@ form{
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
-    padding: 6% 8%;
+    padding: 3% 6%;
     border-radius: 15px;
     background-color: hsla(24, 45%, 55%, 0.8);
     color: rgb(237, 232, 227);
@@ -378,6 +378,9 @@ form{
     padding: 1%;
     font-weight: 600;
     font-size: 22px;
+  }
+  .table-img{
+    width: 220px;
   }
   #t-description{
     font-size: 16px;
@@ -466,7 +469,7 @@ form{
   .cat-img{
     width: 300px;  
     border-radius: 50%;
-    padding: 3%;
+    padding: 0 0 4% 0;
   }
   /*--PRODUCTS.HTML--*/
   .p-description{
@@ -480,7 +483,7 @@ form{
     letter-spacing: 1px;
   }
   .product{
-    width: 300px;
+    width: 250px;
     border-radius: 35px;
   }
 }
