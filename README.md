@@ -6,24 +6,24 @@
 
 - This project is to build a website for a coffee shop to promote its business.
 
-- Fully responsive website to showcase the business menu with prices
+- Fully responsive website to showcase the business menu with prices.
 
 ## Sections
 
 - Home Page: introduction of the business.
 
-- About: information about the (author or the coffee background?).
+- About: information about the author.
 
 - Contact: contact information and a contact form.
 
-- Categories: subsections for different types of products (food, drinks, coffee, snacks).
+- Categories: subsections for different types of products (drinks, coffee, snacks).
 
 - Products: display of each product with image, description and price.
 
 
 ## Goals
 
-- The goal of this project is to demonstrate and improve learnt resources and languages  as HTML, CSS, and JavaScript.
+- The goal of this project is to demonstrate skills in resources as VS Code and GitHub and improve learnt languages as HTML, CSS, and JavaScript.
 
 - Complete the project meeting all the requirements.
 
