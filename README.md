@@ -10,7 +10,7 @@
 
 ## Sections
 
-- Home Page: introduction of the business.
+- Home Page: information of the business and news.
 
 - About: information about the author.
 
