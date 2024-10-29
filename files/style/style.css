@@ -366,21 +366,22 @@ form{
   }
   table{
     padding: 1% 1% 4% 1%;
+    margin-left: auto;
+    margin-right: auto;
     color: 1px transparent hsla(24, 45%, 55%, 0.8);
     width: 450px;
-    height: 500px;  
-    background-color: hsla(33, 100%, 88%, 0.6);
+    height: 400px;  
+    background-color: hsla(33, 100%, 88%, 0.7);
     border-radius: 20px;  
   }
   .new{
-    padding: 2%;
+    padding: 1%;
     font-weight: 550;
     font-size: 22px;
   }
   #t-description{
     font-size: 20px;
-    font-weight: 400;
-    margin: 3%;
+    font-weight: 450;
     text-align: justify;
   }
   .news{
@@ -390,31 +391,26 @@ form{
     width: 100%;
     text-align: center;
   }
-  .opening{
-    padding: 6% 1% 2% 1%;
-    font-size: 32px;
-    font-weight: 550;
-  }
   #opening{
-    width: 500px;
+    padding: 2% 0 2% 5%;
+    width: 460px;
     height: 250px;
+    background-color: hsla(33, 100%, 88%, 0.7);
+
   }
   .row1{
-    padding-top: 25px;
     width: 180px;
     border-bottom: solid 1px;
   }
-  .row2{
-    padding-top: 20px;
-    font-size: 16px;
+  .row2{    
+    font-size: 14px;
     font-weight: 450;
-    line-height: 80px;
+    line-height: 70px;
   }
   
   /*--ABOUT.HTML--*/
   .about{
     padding-top: 10%;
-    
   }
   .about-text{
     background-color: hsla(33, 100%, 90%, 0.8);
@@ -487,27 +483,20 @@ form{
     width: 300px;
     border-radius: 35px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-  *{
-  box-sizing: border-box;
-  color: rgb(74, 43, 22);
-  font-family: "Fredoka", sans-serif;
-  padding: 0;
-  margin: 2px;
-  text-align: center;
-  align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 header{
   padding-top: 0;
   display: block;
@@ -518,7 +507,6 @@ header{
   width: 100%;
   float: left;
 }
-
 .button{
   font-size: 18px;
   font-weight: 500;
@@ -537,33 +525,12 @@ footer{
   grid-template-columns: fit-content(60%);
   justify-content: space-evenly;  
 }
-footer a{
-  font-size: 20px;
-  grid-template-columns: fit-content(60%);
-  display: inline-block;
-  gap: 25px;
-}
 .footer{
   font-size: 16px;
   font-weight: 600;
 }
 /*--INDEX.HTML--*/
-table{
-  margin-left: auto;
-  margin-right: auto;
-  height: 600px;
-  color: 1px transparent hsla(24, 45%, 55%, 0.8);
-  background-color: bisque;
-  width: 550px;
-  border-spacing: 30px 0px;
-}
-#t-title{
-  margin: 20px;
-  padding: 5px;
-  border: 5px;
-  font-size: 35px;
-  font-weight: 600;
-}
+
 #t-description{
   font-size: 16px;
   font-weight: 400;
@@ -585,12 +552,4 @@ img{
 }
 .new{
   font-weight: 600;
-}
-/*--ABOUT.HTML--*/
-
-/*--CONTACT.HTML--*/
-
-/*--CATEGORIES.HTML--*/
-/*--PRODUCTS.HTML--*/
-
 }
