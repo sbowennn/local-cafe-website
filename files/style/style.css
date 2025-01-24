@@ -21,14 +21,12 @@ font-family: "Indie Flower", cursive;
 */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 900px) {
 
 /*--COMMON AMONG HTMLs--*/
   *{
   color: rgb(74, 43, 22);
   font-family: "Fredoka", sans-serif;
-  padding: 0;
-  margin: 2px;
   text-align: center;
   align-items: center;
 }
@@ -36,7 +34,7 @@ h1{
   font-size: 50px;
   font-weight: 600;
   letter-spacing: 2px;
-  padding-top: 12%;
+  padding-top: 2%;
 }
 h2{
   font-size: 42px;
@@ -44,14 +42,13 @@ h2{
   letter-spacing: 1px;
   padding-top: 3%;
   padding-bottom: 1%;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 body{
   background-image: linear-gradient(rgba(255, 222, 196, 0.4), rgba(167, 79, 7, 0.4)), url('/files/images/background.png');
   background-size: cover;
   background-position: center;
 }
-
 header{
   padding-top: 0;
   display: block;
@@ -59,7 +56,6 @@ header{
 }
 .container{
   width: 100%;
-  float: left;
 }
 .logo {
   margin-top: 1%;
@@ -70,13 +66,16 @@ header{
   font-weight: 600;
 }
 .menu{
-  margin: 2% 2px 20px 10px;
+  margin: 3% 2px 20px 20px;
   padding: 2px;
   display: flex;
   justify-content: space-evenly;
   display: inline-block;
   font-size: 22px;
   font-weight: 400;
+}
+.bars{
+  display: none;
 }
 img{
   width: 325px; 
@@ -90,7 +89,7 @@ img{
   text-decoration: none;
   padding: 2% 4%;
   border-radius: 15px;
-  background-color: hsla(24, 45%, 55%, 0.8);
+  background-color: rgb(74, 43, 22, 0.8);
   color: rgb(237, 232, 227);
 }
 .button:hover{
@@ -237,18 +236,24 @@ form{
   padding: 3%;
 }
 /*--PRODUCTS.HTML--*/
-
+.p-column{
+  padding: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
 .p-description{
-  padding: 20px;
+  grid-row: 2;
+  padding: 10px 0px;
   font-size: 26px;
   font-weight: 450;
 }
-#product{
-  font-size: 44px;
-  font-weight: 550;
-  letter-spacing: 1px;
-}
+
 .product{
+  grid-row: 1;
+  padding: auto;
+  margin: auto;
   width: 300px;
   border-radius: 20px;
 }}
@@ -270,8 +275,8 @@ form{
     padding-top: 150px;
   }
   h2{
-    padding: 4% 0 1% 0;
-    margin-top: 3%;
+    padding: 1% 0 1% 0;
+    margin-top: 2%;
     font-size: 30px;
     font-weight: 550;
     letter-spacing: 1px;
@@ -298,13 +303,6 @@ form{
     float: left;
     font-weight: 600;
     width: 100%;
-  }
-  .menu{
-    justify-content: space-evenly;
-    border: 20px;
-    display: inline;
-    font-size: 17px;
-    font-weight: 400;
   }
   img{
     width: 325px; 
@@ -469,11 +467,56 @@ form{
     border-radius: 50%;
     padding: 0 0 4% 0;
   }
+}
+@media screen and (max-width: 900px) {
+  /*--VIEW MENU IN MOBILE PHONE--*/
+  .mobile-container {
+    max-width: 900px;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+  }
+  .mobile-menu {
+    overflow: hidden;
+    background-color: #321b0b;
+    position: relative;
+    width: 100%;
+  }
+  .mobile-menu a {
+    color: rgb(243, 210, 170);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  }
+  .mobile-menu a.bars {
+    font-size: 32px;
+    background: rgb(243, 210, 170);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.3s ease;
+  }
+  .mobile-menu a:hover {
+    background-color: rgb(243, 210, 170);
+    color: rgb(237, 232, 227);
+  }
+  .mobile-menu #menu {
+    display: none;
+  }
   /*--PRODUCTS.HTML--*/
+  .p-column{
+    text-align: center;
+    align-items: center;
+  }
+  .product1, 
+  .product2,
+  .product3{
+    font-size: 42px !important;
+  }
   .p-description{
-    padding: 20px;
-    font-size: 22px;
-    font-weight: 450;
+    font-size: 18px;
   }
   #product{
     font-size: 44px;
@@ -481,7 +524,9 @@ form{
     letter-spacing: 1px;
   }
   .product{
-    width: 250px;
+    padding: auto;
+    margin: auto;
+    width: 300px;
     border-radius: 35px;
   }
 }

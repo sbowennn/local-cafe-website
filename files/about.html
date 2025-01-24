@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>About Me</title>
-  <link rel="stylesheet" href="files/style/style.css">
-  <script src="files/js/main.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="js/main.js"></script>
 
   <link rel="stylesheet" href="https://kit.fontawesome.com/936b0b85c7.js" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/936b0b85c7.js" crossorigin="anonymous"></script>
@@ -16,22 +16,21 @@
 <header class="header" id="header"> <!--https://enterprise.codecademy.com/projects/practice/musicon?-->
   <section class="container">
     <p class="logo">Cozy Mug <i class="fa-solid fa-mug-hot icon"></i></p>
-  <section class="menu">
-    <a href="index.html" class="menu">Home</a>
-  </section>
-  <section class="menu">
-    <a href="files/components/about.html" class="menu">About</a>
-  </section>
-  <section class="menu">
-    <a href="files/components/contact.html" class="menu">Contact</a>
-  </section>
-  <section class="menu">
-    <a href="files/components/categories.html" class="menu">Categories</a>
-  </section>
-  <section class="menu">
-    <a href="files/components/products.html" class="menu">Products</a>
-  </section>
-</section>  
+    <section class="mobile-container">
+      <nav class="mobile-menu">
+        <section id="menu">
+          <a href="/index.html" class="menu">Home</a>
+          <a href="about.html" class="menu">About</a>
+          <a href="contact.html" class="menu">Contact</a>
+          <a href="categories.html" class="menu">Categories</a>
+          <a href="products.html" class="menu">Products</a>
+        </section>
+        <a href="javascript:void(0);" class="bars" onclick="mobileMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </section>
+</section> 
 </header>
 <body>
   <section>
